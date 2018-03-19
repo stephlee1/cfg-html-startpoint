@@ -62,45 +62,47 @@ h1, p, ul, li, h2
   line-height: 1em;
 }
 header {
-     text-align: center;
-     background-color: black;
-     background-size: cover;
-     color: black;
-   }
-   body {
-     background-color: black !important;
-   }
-   a {
-     color: white;
-   }
-   h1 {
-     font-size: 70px;
-     color: white;
-     font-family: 'The Girl Next Door', cursive;
-     padding: 10px;
+  text-align: center;
+  background-color: black;
+  background-size: cover;
+  color: black;
+}
+body {
+  background-color: black !important;
+}
+a {
+  color: white;
+}
 
-   }
-   p {
-     font-family: 'Indie Flower', cursive;
-     font-size: 1.75em;
-   }
+h1 {
+  font-size: 70px;
+  color: white;
+  font-family: 'The Girl Next Door', cursive;
+  padding: 10px;
+}
 
-   #heading {
-     margin-top: 30px;
+p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.75em;
+}
 
+#heading {
+ margin-top: 30px;
+}
 
-   }
-
-
+.navbar-toggler-icon img {
+  width: 32px;
+  height: 32px;
+}
 
 .container a {
   color: #3366ff;
 }
-   .container  {
-     color: white ;
-     margin-top: 10%;
-     margin-bottom: 10%;
-   }
+.container  {
+  color: white ;
+  margin-top: -7%;
+  margin-bottom: 10%;
+}
 
 .text-center {
   margin-top: 20%;
@@ -112,54 +114,82 @@ header {
   width: 48px;
   height: 48px;
 }
-   }
-   ul {
-     padding: 10px;
-     background: rgba(0,0,0,0.5);
-   }
-   li {
-     display: block;
-     padding: 0px 10px 0px 10px;
-   }
-   article {
-     max-width: 500px;
-     padding: 20px;
-     margin: 0 auto;
-   }
 
-   .navbar-brand {
-     font-family: 'The Girl Next Door', cursive;
-     font-size: 32px;
-   }
+ul {
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+}
+li {
+  display: block;
+  padding: 0px 10px 0px 10px;
+}
+
+article {
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  font-family: 'The Girl Next Door', cursive;
+  font-size: 32px;
+}
+
 .navbar-nav .nav-item {
   padding: 0px 0px 0px 60px;
 }
-  li .nav-item .active {
-    border: 2px solid red;
-    border-radius: 25px;
+
+li .nav-item .active {
+  border: 2px solid red;
+  border-radius: 25px;
 }
-/* Need to fix this as there is code repetition*/
 
 
-   #wardrobe {
-     margin-top: 0%;
 
+#wardrobe {
+  margin-top: 0%;
+}
+
+#diningroom {
+  margin-top: -16%;
+}
+
+#bedroom {
+  margin-top: -16%;
+}
+
+#formposition {
+  margin-left: 22%;
+}
+
+#bedimage {
+  width: 320px;
+  background: white;
+  height: 192.5px;
+}
+
+#bedroom p {
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+   transition: opacity 2s ease-in;
+}
+
+   #bedroom p.load {
+     opacity: 1;
    }
-   #diningroom {
-     margin-top: -16%;
+   #wardrobe p {
+     opacity: 0;
+     -webkit-transition: opacity 2s ease-in;
+     -moz-transition: opacity 2s ease-in;
+     -o-transition: opacity 2s ease-in;
+     -ms-transition: opacity 2s ease-in;
+     transition: opacity 2s ease-in;
    }
-   #bedroom {
-     margin-top: -16%;
-
-   }
-   #formposition {
-     margin-left: 22%;
-   }
-   #bedimage {
-     width: 320px;
-     background: white;
-     height: 192.5px;
-
+   #wardrobe p.load {
+     opacity: 1;
    }
    .center {
     display: block;
@@ -167,30 +197,9 @@ header {
     margin-right: auto;
     width: 50%;
 }
-/*
-   @media (max-width: 500px) {
-     h1 {
-       font-size: 36px;
-     }
-     li{
-       display:block;
-       padding: 5px;
-     }
-     .container {
-       background-color: black;
 
-     }
-     ul{
 
-     padding:10px;
-     background:black;
-     }
 
-     li{
-       display:inline;
-       padding:0px 10px 0px 10px;
-     }
-*/
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -199,12 +208,12 @@ header {
     text-decoration: none;
 }
 
-/* Add a hover effect if you want */
+
 .fa:hover {
     opacity: 0.7;
 }
 
-/* Set a specific color for each brand */
+
 
 /* Facebook */
 .fa-facebook {
@@ -217,3 +226,22 @@ header {
     background: black;
     color: white;
 }
+
+.iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+
+   @media (max-width: 768px) {
+     h1 {
+       font-size: 2.0em;
+     }
+
+
+
+    p {
+      font-size: 1.5em;
+    }
+
+  }
