@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+
+/* Reset these tags */
+
+h1, p, ul, li, h2
+{
+  text-align: center;
+
+}
+
+.container {
+  margin:0 auto;
+}
+
+
+
+
+/*Adapted from: https://github.com/IanLunn/Hover */
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.7);
+}
+.ml9 {
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+}
+/*Adapted from http://tobiasahlin.com/moving-letters/#9 */
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+/* All the vanilla CSS goes here */
+
+header {
+  text-align: center;
+  background-color: black;
+  background-size: cover;
+  color: black;
+}
+body {
+  background-color: black !important;
+}
+a {
+  color: white;
+}
+
+h1 {
+  font-size: 70px;
+  color: white;
+  font-family: 'The Girl Next Door', cursive;
+  padding: 10px;
+}
+
+p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.75em;
+}
+
+#heading {
+ margin-top: 30px;
+}
+#heading1 {
+ margin-top: 30px;
+}
+
+.navbar-toggler-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.container a {
+  color: #3366ff;
+}
+.container  {
+  color: white ;
+  margin-top: -7%;
+  margin-bottom: 10%;
+}
+
+.text-center {
+  margin-top: 20%;
+  margin-bottom: 20%;
+
+}
+
+.container img {
+  width: 48px;
+  height: 48px;
+}
+
+ul {
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+}
+li {
+  display: block;
+  padding: 0px 10px 0px 10px;
+}
+
+article {
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  font-family: 'The Girl Next Door', cursive;
+  font-size: 32px;
+}
+
+.navbar-nav .nav-item {
+  padding: 0px 0px 0px 60px;
+}
+
+li .nav-item .active {
+  border: 2px solid red;
+  border-radius: 25px;
+}
+
+/* IDs to target specific stuff */
+
+#wardrobe {
+  margin-top: -5%;
+}
+
+#diningroom {
+  margin-top: -16%;
+}
+
+#bedroom {
+  margin-top: -16%;
+}
+
+#formposition {
+  margin-left: 22%;
+}
+
+#bedimage {
+  width: 320px;
+  background: white;
+  height: 192.5px;
+}
+
+/* Onload animations */
+
+#bedroom p {
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+   transition: opacity 2s ease-in;
+}
+
+#bedroom p.load {
+  opacity: 1;
+}
+
+#wardrobe p {
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+   transition: opacity 2s ease-in;
+ }
+
+   #wardrobe p.load {
+     opacity: 1;
+   }
+   .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+p:hover {
+  text-shadow: 1px 1px;
+}
+
+/*shake animation */
+/* Adapted from https://www.w3schools.com/howto/howto_css_shake_image.asp */
+
+.shakeObject {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+/* Social media icons and last minute additions go here */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
+/* Facebook */
+.fa-facebook {
+    background: black;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: black;
+    color: white;
+}
+
+.iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.imgDollhouse {
+  display: block;
+ max-width:250px;
+ max-height:280px;
+ width: auto;
+ height: auto;
+ position: absolute;
+ right: 0px;
+}
+
+
+/* Media queries for mobile screen */
+
+@media (max-width: 768px) {
+     h1 {
+       font-size: 2.0em;
+     }
+
+
+
+    p {
+      font-size: 1.5em;
+    }
+
+  }
